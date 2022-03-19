@@ -1,15 +1,13 @@
 <script>
-	export let name;
+	import Header from "./ components/Header.svelte";
+	import Form from "./ components/Form.svelte"
 </script>
 
 <!-- HTML for our App goes here -->
 <div id="app-container" class="app-container">
 
-        <!-- Header with information -->
-        <div class="app-header">
-            <div>10 Total</div>
-            <div class="task-count">1 Remaining</div>
-        </div>
+		<Header />
+		<Form />
 
         <!-- List of actual todos -->
         <div class="app-body">
@@ -37,11 +35,6 @@
             </ul>
         </div>
 
-        <!-- Add form at bottom -->
-        <div class="app-form">
-            <input placeholder="Add Todo.." type="text" class="input-text" name="">
-            <button class="btn fa-solid fa-plus"></button>
-        </div>
 
     </div>
 
@@ -91,15 +84,6 @@
             justify-content: space-between;
         }
         
-        .app-header {
-            padding: 10px;
-            display: flex;
-            justify-content: space-between;
-        }
-        
-        .task-count {
-            align-self: center;
-        }
         
         .app-body {
             flex-grow: 1;
@@ -118,32 +102,6 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-        }
-        
-        .app-form {
-            margin-bottom: 10px;
-            display: flex;
-            justify-content: center;
-        }
-        
-        .input-text {
-            height: 40px;
-            background: #282c34;
-            font-size: 15px;
-            border: 1px solid #a2a8ad;
-            color: #dce4ec;
-            width: 100%;
-            margin-right: 15px;
-            border-radius: 2em;
-            padding: 5px 10px;
-            transition: border 250ms ease-out;
-        }
-        
-        .input-text:focus {
-            border: 1px solid #ffffff;
-            background: #1d2025;
-            outline: none;
-            color: #dce4ec;
         }
         
          ::placeholder {
