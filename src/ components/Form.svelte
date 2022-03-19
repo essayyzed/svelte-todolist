@@ -42,6 +42,10 @@
     transition: 250ms ease-out;
     }
 
+    ::placeholder {
+    opacity: 0.3;
+    }    
+
     .btn:hover {
         background: #1d2025;
     }
