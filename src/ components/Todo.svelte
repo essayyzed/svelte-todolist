@@ -1,10 +1,14 @@
-        <li class="todo-list list-item-view">
-            <span>
-    <button class="btn btn-done fa-solid fa-square"></button>
-    <span>First Todo</span>
-            </span>
-            <button class="btn btn-delete fa-solid fa-trash"></button>
-        </li>
+<script>
+    export let itemText;
+    export let completed;
+</script>
+<li class="todo-list list-item-view { completed ? "completed" : " "} ">
+    <span>
+        <button class="btn btn-done fa-solid {completed ? 'fa-square-check' : 'fa-square'} "></button>
+        <span>{itemText}</span>
+    </span>
+        <button class="btn btn-delete fa-solid fa-trash"></button>
+    </li>
 
 <style>
             

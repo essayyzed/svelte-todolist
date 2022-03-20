@@ -2,13 +2,21 @@
 	import Header from "./ components/Header.svelte";
 	import Form from "./ components/Form.svelte";
 	import Todos from "./ components/Todos.svelte";
+
+    let todos = [
+        {id: 1, text: 'First',  completed: false },
+        {id: 2, text: 'Second', completed: true},
+        {id: 3, text: 'Third',  completed: true }
+    ]
 </script>
 
 <!-- HTML for our App goes here -->
 <div id="app-container" class="app-container">
 
 		<Header />
-		<Todos />
+
+		<Todos todos={todos}/>
+
 		<Form />
 		
 
