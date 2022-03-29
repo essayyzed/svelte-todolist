@@ -10,7 +10,6 @@
     //     // console.log("In todos: ", event.detail);
     //     dispatch("completed", event.detail)
     // }
-
 </script>
 
 <!-- List of actual todos -->
